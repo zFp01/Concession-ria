@@ -1,0 +1,53 @@
+#CTC = custo total de compra
+#CTI = custo total de impostos
+#CMC = consumo médio de combustível
+#CS = custos com seguro
+#---------------------------------------------------
+#CMC1 = Chevrolet Ônix-46964
+#CMC2 = Ford Fiesta-5373
+#CMC3 = Vw Fox-48954
+#CMC4 = Vw Polo-5373
+#CMC5 = Hyundai HB20-46168
+#CMC6 = Renault Sandero-50944
+#TCMC = Todos os cmc
+
+print("Olá, Vamos descobrir qual é o carro que vale mais apena:")
+
+modelos = ["Chevrolet Ônix", "Ford Fiesta", "Vw Fox", "Vw Polo", "Hyundai HB20", "Renault Sandero"]
+ctc = [36000, 32000, 31000, 41000, 40000, 30000]
+cti = [1400, 1300, 1450, 1600, 1200, 1300]
+cmc = [11.8, 13.5, 12.3, 13.5, 11.6, 12.8]
+cs = [1600, 1800, 1300, 1500, 1200, 1900]
+
+cmc1 = cmc[0]*3.98
+cmc2 = cmc[1]*3.98
+cmc3 = cmc[2]*3.98
+cmc4 = cmc[3]*3.98
+cmc5 = cmc[4]*3.98
+cmc6 = cmc[5]*3.98
+
+tcmc = [cmc1, cmc2, cmc3, cmc4, cmc5, cmc6]
+for x in tcmc:
+  cmc = tcmc
+#---------------------------------------------------------------------------------
+car1 = (ctc[0] + cti[0] + cmc[0] + cs[0])
+car2 = (ctc[1] + cti[1] + cmc[1] + cs[1])
+car3 = (ctc[2] + cti[2] + cmc[2] + cs[2])
+car4 = (ctc[3] + cti[3] + cmc[3] + cs[3])
+car5 = (ctc[4] + cti[4] + cmc[4] + cs[4])
+car6 = (ctc[5] + cti[5] + cmc[5] + cs[5])
+
+todos_carros = [car1, car2, car3, car4, car5, car6]
+
+carro1 = ["Chevrolet Ônix custa por ano:", car1]
+carro2 = ["Ford Fiesta custa por ano:", car2]
+carro3 = ["Vw Fox custa por ano:", car3]
+carro4 = ["Vw Polo custa por ano:", car4]
+carro5 = ["Hyundai HB20 custa por ano:", car5]
+carro6 = ["Renault Sandero custa por ano:", car6]
+
+todos_carros = [carro1, carro2, carro3, carro4, carro5, carro6]
+for i in todos_carros:
+  print(i)
+
+print("O carro mais em conta para o senhor(a) é o: Renault Sandero")
